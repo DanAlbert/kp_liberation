@@ -22,7 +22,7 @@ class Params
 		title = $STR_AGGRESSIVITY_PARAM;
 		values[] = {0,1,2,3,4};
 		texts[] = {$STR_AGGRESSIVITY_PARAM0, $STR_AGGRESSIVITY_PARAM1,$STR_AGGRESSIVITY_PARAM2,$STR_AGGRESSIVITY_PARAM3,$STR_AGGRESSIVITY_PARAM4};
-		default = 2;
+		default = 3;
 	};
 	class AdaptToPlayercount {
 		title = $STR_PARAM_ADAPT_TO_PLAYERCOUNT;
@@ -52,7 +52,7 @@ class Params
 		title = $STR_PARAM_SQUAD_SIZE;
 		values[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
 		texts[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
-		default = 12;
+		default = 20;
 	};
 	class BluforDefenders {
 		title = $STR_PARAM_BLUFOR_DEFENDERS;
@@ -70,13 +70,13 @@ class Params
 		title = $STR_PARAMS_DAYDURATION;
 		values[] = {48, 24, 16, 12, 8, 6, 4, 3, 2, 1};
 		texts[] = {"0.5","1","1.5","2","3","4","6","8","12","24"};
-		default = 4;
+		default = 6;
 	};
 	class ShorterNights {
 		title = $STR_SHORTER_NIGHTS_PARAM;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 1;
 	};
 	class Weather {
 		title = $STR_WEATHER_PARAM;
@@ -107,7 +107,7 @@ class Params
 		isGlobal = 1;
 		values[] = {-100,0,1};
 		texts[] = {$STR_A3_MissionDefault, $STR_A3_Disabled, $STR_A3_EnabledForAllPlayers};
-		default = 1;
+		default = -100;
 		function = "bis_fnc_paramReviveMode";
 	};
 	class ReviveDuration {
@@ -115,7 +115,7 @@ class Params
 		isGlobal = 1;
 		values[] = {-100,6,8,10,12,15,20,25,30};
 		texts[] = {$STR_A3_MissionDefault,6,8,10,12,15,20,25,30};
-		default = 6;
+		default = 12;
 		function = "bis_fnc_paramReviveDuration";
 	};
 	class ReviveRequiredTrait {
@@ -123,7 +123,7 @@ class Params
 		isGlobal = 1;
 		values[] = {-100,0,1};
 		texts[] = {$STR_A3_MissionDefault,$STR_A3_None,$STR_A3_Medic};
-		default = 1;
+		default = 0;
 		function = "bis_fnc_paramReviveRequiredTrait";
 	};
 	class ReviveMedicSpeedMultiplier {
@@ -131,7 +131,7 @@ class Params
 		isGlobal = 1;
 		values[] = {-100,1,1.5,2,2.5,3};
 		texts[] = {$STR_A3_MissionDefault,"1x","1.5x","2x","2.5x","3x"};
-		default = 1;
+		default = 3;
 		function = "bis_fnc_paramReviveMedicSpeedMultiplier";
 	};
 	class ReviveRequiredItems {
@@ -139,7 +139,7 @@ class Params
 		isGlobal = 1;
 		values[] = {-100,0,1,2};
 		texts[] = {$STR_A3_MissionDefault,$STR_A3_None,$STR_A3_Medikit,$STR_A3_FirstAidKitOrMedikit};
-		default = 1;
+		default = 2;
 		function = "bis_fnc_paramReviveRequiredItems";
 	};
 	class UnconsciousStateMode {
@@ -155,7 +155,7 @@ class Params
 		isGlobal = 1;
 		values[] = {-100,10,15,20,30,45,60,90,180};
 		texts[] = {$STR_A3_MissionDefault,10,15,20,30,45,60,90,180};
-		default = 180;
+		default = 360;
 		function = "bis_fnc_paramReviveBleedOutDuration";
 	};
 	class ReviveForceRespawnDuration {
@@ -182,19 +182,19 @@ class Params
 		title = $STR_PARAMS_FATIGUE;
 		values[] = { 0, 1 };
 		texts[] = { $STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED };
-		default = 1;
+		default = 0;
 	};
 	class ArsenalUsePreset {
 		title = $STR_PARAMS_ARSENALUSEPRESET;
 		values[] = { 0, 1 };
 		texts[] = { $STR_PARAMS_NORESTRICTIONS, $STR_PARAMS_USEPRESET };
-		default = 1;
+		default = 0;
 	};
 	class MapMarkers {
 		title = $STR_PARAMS_MAPMARKERS;
 		values[] = { 0, 1 };
 		texts[] = { $STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED };
-		default = 1;
+		default = 0;
 	};
 	class MobileRespawn {
 		title = $STR_PARAMS_MOBILERESPAWN;
@@ -206,7 +206,7 @@ class Params
 		title = $STR_PARAM_RESPAWN_COOLDOWN;
 		values[] = {0, 300, 600, 900, 1200, 1800, 3600};
 		texts[] = {$STR_PARAMS_DISABLED, 5, 10, 15, 20, 30, 60};
-		default = 900;
+		default = 0;
 	};
 	class MobileArsenal {
 		title = $STR_PARAMS_MOBILEARSENAL;
@@ -285,13 +285,13 @@ class Params
 		title = $STR_PARAMS_DEPLOYMENTCAMERA;
 		values[] = { 1, 0 };
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class Whitelist {
 		title = $STR_WHITELIST_PARAM;
 		values[] = { 1, 0 };
 		texts[] = { $STR_WHITELIST_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
+		default = 1;
 	};
 	class ServerRestart {
 		title = $STR_RESTART_PARAM;
