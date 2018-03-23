@@ -27,3 +27,5 @@ if (!isDedicated && hasInterface) then {
 } else {
 	setViewDistance 1600;
 };
+
+[] execVM "VCOMAI\init.sqf";
