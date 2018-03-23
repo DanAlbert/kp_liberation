@@ -40,16 +40,18 @@ If you want to change a preset, it's recommended to set all four presets to 0 an
 5 = BWMod Bundeswehr (Tropentarn)
 6 = RHS USAF (Woodland)
 7 = RHS USAF (Desert)
-8 = RHS AFRF (VDV/MSV) */
-KP_liberation_preset_blufor = 0;
+8 = RHS AFRF (VDV/MSV)
+9 = IFA3 US Army */
+KP_liberation_preset_blufor = 9;
 
 /* OPFOR preset:
 0 = Custom (default vanilla CSAT)
 1 = Apex Tanoa (apex vanilla CSAT)
 2 = RHS AFRF (EMR/MSV)
 3 = Project OPFOR (Takistan)
-4 = Project OPFOR (Islamic State) */
-KP_liberation_preset_opfor = 0;
+4 = Project OPFOR (Islamic State)
+5 = IFA3 Wehrmacht */
+KP_liberation_preset_opfor = 5;
 
 /* Resistance preset:
 0 = Custom (default vanilla FIA)
