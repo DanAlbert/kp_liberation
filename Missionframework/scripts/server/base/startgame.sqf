@@ -23,24 +23,31 @@ if (count GRLIB_all_fobs == 0) then {
 		_spawnplace = selectRandom _potentialplaces;
 		[markerPos _spawnplace, true] remoteExec ["build_fob_remote_call",2];
 	} else {
-		private _fobbox = objNull;
-		
-		while {count GRLIB_all_fobs == 0} do {
-			_fobbox = FOB_box_typename createVehicle (getposATL base_boxspawn);
-			_fobbox setdir getDir base_boxspawn;
-			_fobbox setposATL (getposATL base_boxspawn);	
+		if (GRLIB_load_fob_in_huron == 1) then {
+			// Handled by huron_manager.sqf. We can't just make this loadable in
+			// the else clause because then it will spawn a new FOB crate after
+			// the crate is loaded.
+		} else {
+			private _fobbox = objNull;
 
-			_fobbox call F_setFobMass;
+			while {count GRLIB_all_fobs == 0} do {
+				_fobbox = FOB_box_typename createVehicle (getposATL base_boxspawn);
+				_fobbox setdir getDir base_boxspawn;
+				_fobbox setposATL (getposATL base_boxspawn);
 
-			sleep 3;
+				_fobbox call F_setFobMass;
+				[_fobbox, 3] call ace_cargo_fnc_setSize;
 
-			waitUntil {
-				sleep 1;
-				!(alive _fobbox) || ((count GRLIB_all_fobs) > 0) || (((getPosASL _fobbox) select 2) < 0)
+				sleep 3;
+
+				waitUntil {
+					sleep 1;
+					!(alive _fobbox) || ((count GRLIB_all_fobs) > 0) || (((getPosASL _fobbox) select 2) < 0)
+				};
+				sleep 15;
 			};
-			sleep 15;			
-		};
-		deleteVehicle _fobbox;
+			deleteVehicle _fobbox;
+		}
 	};
 
 	waitUntil {sleep 5; (count GRLIB_all_fobs) > 0};

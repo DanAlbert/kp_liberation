@@ -42,6 +42,12 @@ class Params
 		texts[] = { $STR_YES, $STR_NO };
 		default = 0;
 	};
+	class FobInHuron {
+		title = $STR_PARAMS_FOBINHURON;
+		values[] = { 1, 0 };
+		texts[] = { $STR_YES, $STR_NO };
+		default = 1;
+	};
 	class MaximumFobs {
 		title = $STR_PARAM_FOBS_COUNT;
 		values[] = {3,5,7,10,15,20,26};

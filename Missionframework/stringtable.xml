@@ -1594,6 +1594,17 @@
 			<Turkish>Oyuna ilk FOB kurulu olarak başla</Turkish>
 			<Portuguese>Iniciar a campanha com a primeira FOB já construída</Portuguese>
 		</Key>
+		<Key ID="STR_PARAMS_FOBINHURON">
+			<Original>Start the campaign with the FOB container in the mobile respawn.</Original>
+			<French>Start the campaign with the FOB container in the mobile respawn.</French>
+			<German>Start the campaign with the FOB container in the mobile respawn.</German>
+			<Spanish>Start the campaign with the FOB container in the mobile respawn.</Spanish>
+			<Russian>Start the campaign with the FOB container in the mobile respawn.</Russian>
+			<Italian>Start the campaign with the FOB container in the mobile respawn.</Italian>
+			<Chinesesimp>Start the campaign with the FOB container in the mobile respawn.</Chinesesimp>
+			<Turkish>Start the campaign with the FOB container in the mobile respawn.</Turkish>
+			<Portuguese>Start the campaign with the FOB container in the mobile respawn.</Portuguese>
+		</Key>
 		<Key ID="STR_YES">
 			<Original>Yes</Original>
 			<French>Oui</French>

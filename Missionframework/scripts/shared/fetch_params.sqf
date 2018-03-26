@@ -10,6 +10,7 @@ if ( isMultiplayer ) then {
 	GRLIB_civilian_activity = ["civilians",1] call bis_fnc_getParamValue;
 	GRLIB_teamkill_penalty = ["TeamkillPenalty",0] call bis_fnc_getParamValue;
 	GRLIB_build_first_fob = ["FirstFob",0] call bis_fnc_getParamValue;
+	GRLIB_load_fob_in_huron = ["FobInHuron",0] call bis_fnc_getParamValue;
 	GRLIB_param_wipe_savegame_1 = ["WipeSave1",0] call bis_fnc_getParamValue;
 	GRLIB_param_wipe_savegame_2 = ["WipeSave2",0] call bis_fnc_getParamValue;
 	GRLIB_permissions_param = ["Permissions",1] call bis_fnc_getParamValue;
@@ -54,6 +55,7 @@ if ( isMultiplayer ) then {
 	GRLIB_civilian_activity = 1;
 	GRLIB_teamkill_penalty = 0;
 	GRLIB_build_first_fob = 0;
+	GRLIB_load_fob_in_huron = 1;
 	GRLIB_param_wipe_savegame_1 = 0;
 	GRLIB_param_wipe_savegame_2 = 0;
 	GRLIB_permissions_param = 0;

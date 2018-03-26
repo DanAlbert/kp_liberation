@@ -21,6 +21,17 @@ while { true } do {
 		huron allowdamage false;
 		huron setDir (getDir huronspawn);
 		huron setPosATL (getposATL huronspawn);
+		[huron, 20] call ace_cargo_fnc_setSpace;
+
+		if (GRLIB_load_fob_in_huron == 1 && count GRLIB_all_fobs == 0) then {
+			_fobbox = FOB_box_typename createVehicle (getposATL base_boxspawn);
+			_fobbox setdir getDir base_boxspawn;
+			_fobbox setposATL (getposATL base_boxspawn);
+
+			_fobbox call F_setFobMass;
+			[_fobbox, 3] call ace_cargo_fnc_setSize;
+			[_fobbox, huron] call ace_cargo_fnc_loadItem;
+		}
 	};
 
 	firstloop = false;
