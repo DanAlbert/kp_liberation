@@ -24816,16 +24816,17 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={27483.92,23.542109,5341.9409};
+				position[]={27448.588,24.222973,5331.4995};
+				angles[]={0,0.0070596421,0};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				name="huronspawn";
 			};
 			id=5828;
 			type="Land_ClutterCutter_small_F";
+			atlOffset=0.68064499;
 			class CustomAttributes
 			{
 				class Attribute0
