@@ -24937,7 +24937,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={27415.729,23.539343,5349.5513};
+				position[]={27443.791,23.541962,5327.2227};
 			};
 			side="Empty";
 			flags=4;
@@ -24947,7 +24947,6 @@ class Mission
 			};
 			id=5831;
 			type="Land_ClutterCutter_small_F";
-			atlOffset=0.026340485;
 			class CustomAttributes
 			{
 				class Attribute0
