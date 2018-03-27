@@ -17,7 +17,7 @@ FOB_typename = "Land_tent_east";
 
 // This is the FOB as a container.
 // Default is "B_Slingload_01_Cargo_F".
-FOB_box_typename = "LIB_AmmoCrates_NoInteractive_Large";
+FOB_box_typename = "LIB_WeaponsBox_Big_SU";
 
 // This is the FOB as a vehicle.
 // Default is "B_Truck_01_box_F".
