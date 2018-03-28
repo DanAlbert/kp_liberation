@@ -31,7 +31,14 @@ Arsenal_typename = "B_supplyCrate_F";
 // Default is "B_Truck_01_medical_F".
 Respawn_truck_typename = "LIB_US_GMC_Ambulance";
 
-// This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+// This is Spartan 01, our flying mobile respawn. In the non-WW2 mission this is
+// a helicopter. In our version it's a C47 Skytrain (perhaps later it will be a
+// Waco glider).
+//
+// ACE allows us to load the FOB box on board and air drop it. Unfortunately
+// there's a bug in the latest ACE (https://github.com/acemod/ACE3/issues/5399)
+// that is causing airdropped equipment to fall through the ground. Until then,
+// we'll just have to land the C47 and unload it manually.
 // Default is "B_Heli_Transport_03_unarmed_F".
 huron_typename = "LIB_C47_Skytrain";
 
