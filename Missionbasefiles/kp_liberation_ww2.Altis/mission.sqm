@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1042;
+		nextID=1051;
 	};
 	class Camera
 	{
@@ -14262,6 +14262,7 @@ class Intro
 };
 class Mission
 {
+	assetType="Free";
 	class Intel
 	{
 		briefingName="@STR_MISSION_TITLE";
