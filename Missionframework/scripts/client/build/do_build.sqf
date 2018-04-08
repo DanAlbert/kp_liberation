@@ -331,6 +331,14 @@ while { true } do {
 				
 				if (_classname in KP_liberation_medical_vehicles) then {
 					_vehicle setVariable ["ace_medical_medicClass", 1, true];
+
+					_vehicle addItemCargoGlobal ["ACE_fieldDressing", 72];
+					_vehicle addItemCargoGlobal ["ACE_elasticBandage", 512];
+					_vehicle addItemCargoGlobal ["ACE_bloodIV", 64];
+					_vehicle addItemCargoGlobal ["ACE_bloodIV_500", 128];
+					_vehicle addItemCargoGlobal ["ACE_epinephrine", 64];
+					_vehicle addItemCargoGlobal ["ACE_morphine", 64];
+					_vehicle addItemCargoGlobal ["ACE_tourniquet", 32];
 				};
 
 				if (_classname == "Land_HelipadSquare_F" || _classname == "Land_HelipadCircle_F" || _classname == "Land_HelipadRescue_F") then {
