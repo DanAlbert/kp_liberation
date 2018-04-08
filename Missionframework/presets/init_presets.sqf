@@ -148,5 +148,5 @@ elite_vehicles = [elite_vehicles, {[_x] call F_checkClass}] call BIS_fnc_conditi
 opfor_infantry = [opfor_sentry,opfor_rifleman,opfor_grenadier,opfor_squad_leader,opfor_team_leader,opfor_marksman,opfor_machinegunner,opfor_heavygunner,opfor_medic,opfor_rpg,opfor_at,opfor_aa,opfor_officer,opfor_sharpshooter,opfor_sniper,opfor_engineer];
 GRLIB_intel_file = "Land_File1_F";
 GRLIB_intel_laptop = "Land_File_research_F";
-GRLIB_sar_wreck = "Land_Wreck_Heli_Attack_01_F";
+GRLIB_sar_wreck = "LIB_C47_Skytrain_wreck";
 GRLIB_sar_fire = "test_EmptyObjectForFireBig";
